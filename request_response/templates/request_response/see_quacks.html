@@ -1,0 +1,13 @@
+
+<div style="text-align: center; margin: 4em">
+  {% if quacks %}
+    {% for quack in quacks %}
+      <h1>{{ quack }}</h1>
+    {% endfor %}
+    <h1>{{ quackalicious }}</h1>
+  {% elif quackalicious %}
+    <h1>{{ quackalicious }}</h1>
+  {% else %}
+    <h1>No quacks to see here</h1>
+  {% endif %}
+</div>
